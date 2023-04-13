@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-image: url(./assets/434101ba9268173371876d9f1b54366e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.iLogo
+{
+    width: 200px;
+    
+}
+.sBtn
+{
+    justify-content: center;
+}
+.qwhiteBg
+{
+    background-color: white;
+    
+}
+
+#movePoke, #abPoke, #typePoke, #namePoke
+{
+    overflow-y: auto;
+    height: 50px;
+}
+
+.tBox
+{
+    width: 300px;
+    margin-left: 41%;
+    margin-top: 1%;
+    border-style:double;
+    border-width: 5px;
+    border-color: black;
+    
+}
+
+
+#imageTwo
+{
+    background-color: rgb(240, 240, 240);
+    margin-left: 0%;
+    border-radius: 10%;
+    border-style:dashed;
+    border-width: 10px;
+    border-color: red;
+    width: 300px;
+}
+
+#imageOne
+{
+    background-color: rgb(215, 0, 0);
+    margin-left: 1%;
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+    border-style:dashed;
+    border-width: 10px;
+    margin-right: 1%;
+}
