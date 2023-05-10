@@ -31,13 +31,26 @@ body{
 .tBox
 {
     width: 300px;
-    margin-left: 41%;
+    margin-left: 51%;
+    margin-top: 1%;
+    border-style:double;
+    border-width: 5px;
+    border-color: black;
+    
+
+    
+}
+.tBoxTwo
+{
+    width: 300px;
+    margin-left:29%;
     margin-top: 1%;
     border-style:double;
     border-width: 5px;
     border-color: black;
     
 }
+
 
 
 #imageTwo
@@ -61,4 +74,21 @@ body{
     border-style:dashed;
     border-width: 10px;
     margin-right: 1%;
+
 }
+.pokePic{
+    display: flex;
+    justify-content: center;
+
+}
+.Container{
+    display: flex;
+    justify-content: right;
+
+    
+}
+
+.row{
+background-color: black;
+}
+

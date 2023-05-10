@@ -1,54 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/Pokeball.png" />
-    <title>Pokedex</title>
-    <link href="/dist/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="container flex justify-center">
-      <img class="iLogo" src="./assets/Pokemon-Logo-PNG-Pic.png" alt="" />
-    </div>
 
-    <div class="flex justify-center">
-      <div class="mb-3 xl:w-96">
-        <label
-          for="exampleFormControlInput1"
-          class="form-label inline-block mb-2 text-gray-700"
-        ></label>
-        <input
-          type="text"
-          class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-          id="userInput"
-          placeholder="Example label"
-        />
-        <button
-          id="searchButton"
-          type="button"
-          class="sBtn px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
-        >
-          Search
-        </button>
-        <button
-          id="rndBtn"
-          type="button"
-          class="px-6 py-2.5 bg-black text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
-        >
-          Random
-        </button>
-        <button
-          id="favBtn"
-          type="button"
-          class="px-6 py-2.5 bg-white text-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
-        >
-          Favorite
-        </button>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/Pokeball.png" />
+  <title>Pokedex</title>
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="pokePic">
+    <img class="iLogo" src="./assets/Pokemon-Logo-PNG-Pic.png" alt="" />
+  </div>
+
+  <div class="pokePic">
+    <div class="mb-3 xl:w-96">
+      <label for="exampleFormControlInput1" class="form-label inline-block mb-2 text-gray-700"></label>
+      <input type="text"
+        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+        id="userInput" placeholder="Example label" />
+      <button id="searchButton" type="button"
+        class="sBtn px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out">
+        Search
+      </button>
+      <button id="rndBtn" type="button"
+        class="px-6 py-2.5 bg-black text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out">
+        Random
+      </button>
+      </button>
     </div>
-    <!-- <button
+  </div>
+  <!-- <button
     id="recBtn"
     type="button"
     class="px-6 py-2.5 bg-white text-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
@@ -56,45 +40,50 @@
     Favorite
   </button> -->
 
-    <div class="container">
-      <div class="row">
-        <div class="">
-          <div class="flex justify-center">
-            <img
-              id="imageOne"
-              class="mt-4 justify-center"
-              src="./assets/Pokeball.png"
-              alt=""
-            />
-           
-            <img
-              id="imageTwo"
-              class="mt-4 justify-center"
-              src="./assets/Pokeball.png"
-              alt=""
-            />
-          </div>
+  <div class="container">
+    <div >
+      <div class="">
+        <div class="pokePic">
+          <img id="imageOne" class="mt-4 justify-center" src="./assets/Pokeball.png" alt="" />
+
+          <img id="imageTwo" class="mt-4 justify-center" src="./assets/Pokeball.png" alt="" />
         </div>
       </div>
     </div>
-     <div class="container">
-              <div class="tBox qwhiteBg flex justify-center">
-                <p id="namePoke">Name</p>
-              </div>
-              <div class="tBox qwhiteBg flex justify-center" id="typePoke">
-                <p></p>
-              </div>
-              <div class="tBox qwhiteBg flex justify-center" id="abPoke">
-                <p></p>
-              </div>
-              <div class="tBox qwhiteBg flex justify-center" id="movePoke">
-                <p></p>
-              </div>
-              <div class="tBox qwhiteBg flex justify-center" id="locPoke">
-                <p></p>
-              </div>
-            </div>
-  </body>
+  </div>
+
+  <Container>
+
+    <row class="row">
+      <Col>
+      <div class="tBoxTwo qwhiteBg ">
+        <p id="namePoke">Name</p>
+      </div>
+
+      <div class="tBoxTwo qwhiteBg ">
+        <p id="typePoke"></p>
+      </div>
+      </Col>
+    
+      <Col>
+      <div class="tBox qwhiteBg " id="abPoke">
+        <p></p>
+      </div>
+
+      <div class="tBox qwhiteBg " id="movePoke">
+        <p></p>
+      </div>
+
+
+      <div class="tBox qwhiteBg " id="locPoke">
+        <p></p>
+      </div>
+      </Col>
+    </row>
+    
+  </Container>
+</body>
+
 </html>
 
 <script src="./app.js"></script>
